@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "nginx",
-            "image": "<IMAGE1_NAME>",
+            "image": "260851616142.dkr.ecr.eu-west-1.amazonaws.com/niklas:Latest",
             "cpu": 256,
             "memoryReservation": 512,
             "links": [],
