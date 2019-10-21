@@ -3,6 +3,16 @@
         {
             "name": "nginx",
             "image": "260851616142.dkr.ecr.eu-west-1.amazonaws.com/niklas:Latest",
+            "secrets": [
+                {
+                    "name": "PARAMTEST",
+                    "valueFrom": "arn:aws:ssm:eu-west-1:260851616142:parameter/Prod/PARAMTEST"
+                },
+                {
+                    "name": "PARAMTEST1",
+                    "valueFrom": "arn:aws:ssm:eu-west-1:260851616142:parameter/PARAMTEST1"
+                }
+            ],
             "cpu": 256,
             "memoryReservation": 512,
             "links": [],

@@ -10,7 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
   console.log('Got request', JSON.stringify(req.connection.remoteAddress, null, 2));
-  res.send('Hello world 1234 martin\n');
+  res.send('Hello world 12345\n' + process.env.PARAMTEST + ' - ' + process.env.PARAMTEST1 + '\n');
 });
 
 app.listen(PORT, HOST);
