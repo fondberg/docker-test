@@ -10,6 +10,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.get('/', (req, res) => {
   console.log('Got request', JSON.stringify(req.connection.remoteAddress, null, 2));
+  console.log('Env', JSON.stringify(process.env, null, 2));
   res.send('Hello world 12345\n' + process.env.PARAMTEST + ' - ' + process.env.PARAMTEST1 + '\n');
 });
 
