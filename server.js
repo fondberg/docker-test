@@ -16,3 +16,4 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
+console.log('DBURL\n' + process.env.DBURL + ' - PARAMTEST1:' + process.env.PARAMTEST1 + '\n');
